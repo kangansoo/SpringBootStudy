@@ -19,3 +19,4 @@ application.properties
 
 # 로컬 디버그 설정 파일
 /.vscode/
+/.metadata/
