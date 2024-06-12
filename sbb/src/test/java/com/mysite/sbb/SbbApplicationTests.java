@@ -16,6 +16,7 @@ import com.mysite.sbb.answer.Answer;
 import com.mysite.sbb.answer.AnswerRepository;
 import com.mysite.sbb.question.Question;
 import com.mysite.sbb.question.QuestionRepository;
+import com.mysite.sbb.question.QuestionService;
 import com.mysite.sbb.question.QuestionWantColumn;
 
 import lombok.extern.log4j.Log4j2;
@@ -134,7 +135,7 @@ class SbbApplicationTests {
     
     @Transactional
     @Test
-    void testJpa() {
+    void testFindAnswerById() {
         Optional<Question> oq = this.questionRepository.findById(2);
         assertTrue(oq.isPresent());
         Question q = oq.get();
